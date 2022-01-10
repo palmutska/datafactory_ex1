@@ -1,0 +1,9 @@
+{
+	"name": "palma-datafactory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d4e31142-9fa1-4b7f-9c0f-cf71ae63957b",
+		"tenantId": "2d0f9918-d18f-4d32-8598-fa9745368b10"
+	}
+}
