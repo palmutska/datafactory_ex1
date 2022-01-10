@@ -1,0 +1,52 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "annual-enterprise-survey-2020-financial-year-provisional-size-bands-csv (1).csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "year",
+				"type": "String"
+			},
+			{
+				"name": "industry_code_ANZSIC",
+				"type": "String"
+			},
+			{
+				"name": "industry_name_ANZSIC",
+				"type": "String"
+			},
+			{
+				"name": "rme_size_grp",
+				"type": "String"
+			},
+			{
+				"name": "variable",
+				"type": "String"
+			},
+			{
+				"name": "value",
+				"type": "String"
+			},
+			{
+				"name": "unit",
+				"type": "String"
+			}
+		]
+	}
+}
