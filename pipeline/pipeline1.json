@@ -101,7 +101,7 @@
 							{
 								"source": {
 									"name": "year",
-									"type": "Int32",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -112,23 +112,23 @@
 							},
 							{
 								"source": {
-									"name": "industryType",
+									"name": "industry_name_ANZSIC",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "industry_code_ANZSIC",
-									"type": "String",
+									"name": "industyType",
 									"physicalType": "UTF8"
 								}
 							},
 							{
 								"source": {
+									"name": "variable",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
 									"name": "measure",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "variable",
-									"type": "String",
 									"physicalType": "UTF8"
 								}
 							},
@@ -146,7 +146,7 @@
 							},
 							{
 								"source": {
-									"name": "variable",
+									"name": "unit",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -166,13 +166,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "parquet",
+						"referenceName": "Parquet1",
 						"type": "DatasetReference"
 					}
 				]
