@@ -5,14 +5,7 @@
 			{
 				"name": "List files blob",
 				"type": "GetMetadata",
-				"dependsOn": [
-					{
-						"activity": "Azure Function1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -31,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -183,27 +177,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Azure Function1",
-				"type": "AzureFunctionActivity",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"functionName": "HttpTrigger1",
-					"method": "GET"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureFunction1",
-					"type": "LinkedServiceReference"
-				}
 			}
 		],
 		"annotations": []
