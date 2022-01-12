@@ -24,7 +24,7 @@
 			"value": "https://palmastorageadls2.dfs.core.windows.net"
 		},
 		"AzureFunction1_properties_typeProperties_functionAppUrl": {
-			"value": "https://palma-functionazure.azurewebsites.net"
+			"value": "https://palmafunc.azurewebsites.net"
 		}
 	}
 }

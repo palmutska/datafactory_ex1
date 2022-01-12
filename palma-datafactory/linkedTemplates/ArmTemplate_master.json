@@ -33,7 +33,7 @@
 		},
 		"AzureFunction1_properties_typeProperties_functionAppUrl": {
 			"type": "string",
-			"defaultValue": "https://palma-functionazure.azurewebsites.net"
+			"defaultValue": "https://palmafunc.azurewebsites.net"
 		},
 		"containerUri": {
 			"type": "string",
